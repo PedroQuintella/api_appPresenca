@@ -15,7 +15,7 @@ public class ProfessorService {
     private ProfessorRepository professorRepository;
 
     public Professor salvar(Professor professor){
-        return professorRepository.save(professor)
+        return professorRepository.save(professor);
     }
 
     public List<Professor> listaProfessor(){
