@@ -6,6 +6,6 @@ import br.edu.universidadedevassouras.api.model.Professor;
 
 @Repository
 public interface ProfessorRepository extends JpaRepository<Professor, Long> {
-
+    Professor findByUsername(String professor);
 
 }

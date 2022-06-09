@@ -12,7 +12,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Pattern;
+//import javax.validation.constraints.Pattern;
 import java.io.Serializable;
 
 
@@ -29,12 +29,14 @@ public class Professor implements Serializable {
 
     @NotBlank
     //@Pattern(regexp = "^[A-Z]+(.)*")
-    @Column(name = "nome", nullable = false)
+    @Column(name = "pr_nome", nullable = false)
     private String nome;
 
-    @Column(name = "matricula", nullable = false)
+    @NotBlank
+    @Column(name = "pr_matricula", nullable = false)
     private String matricula;
 
-    @Column(name = "senha", nullable = false)
+    @NotBlank
+    @Column(name = "pr_senha", nullable = false)
     private String senha;
 }
