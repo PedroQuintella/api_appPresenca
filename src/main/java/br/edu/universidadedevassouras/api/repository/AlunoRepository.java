@@ -6,6 +6,6 @@ import br.edu.universidadedevassouras.api.model.Aluno;
 
 @Repository
 public interface AlunoRepository extends JpaRepository<Aluno, Long> {
-    Aluno findByUsername(String aluno);
+    //Aluno findByUsername(String aluno);
 
 }

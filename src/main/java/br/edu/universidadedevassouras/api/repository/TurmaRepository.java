@@ -6,6 +6,6 @@ import br.edu.universidadedevassouras.api.model.Turma;
 
 @Repository
 public interface TurmaRepository extends JpaRepository<Turma, Long> {
-    Turma findByUsername(String turma);
+    //Turma findByUsername(String turma);
 
 }
